@@ -4,14 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Cálculo de validação - CPF</title>
 </head>
 <body>
-    <form>
-        <label>Digite um cpf:</label>
-        <input type="text" placeholder="XXX.XXX.XXX-XX" class="input__cpf" id="cpf">
-        <button class="bt__calc" id="bt">Calcular</button>
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__nav">
+                <li class="header__li"><a class="header__link">Cpf</a></li>
+                <li class="header__li"><a class="header__link">Cpf</a></li>
+                <li class="header__li"><a class="header__link">Cpf</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form class="formulario">
+        <label class="formulario__label">Digite um cpf:</label>
+        <input class="formulario__input" type="text" placeholder="XXX.XXX.XXX-XX" id="cpf">
+        <button class="formulario__bt" id="bt">Calcular</button>
     </form>
+    <div id="resposta"></div>
 
     <script src="calc-cpf.js"></script>
 </body>

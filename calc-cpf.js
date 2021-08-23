@@ -1,6 +1,7 @@
 
 bt.addEventListener('click',(evento) => {
     let bt = document.querySelector("button");
+    let resposta = document.getElementById("resposta");
     let cpf = document.getElementById("cpf").value;
     var array = cpf.split('');
     var cpfVerificador = cpf.substr(9,10);
@@ -15,12 +16,15 @@ bt.addEventListener('click',(evento) => {
         soma2 = 11 - (valor2 % 11);
 
     });
- 
+    let cpfVerificado = 'soma'+'soma2';
     console.log(soma);
     console.log(soma2);
     console.log(cpfVerificador);
-
-
+    console.log(cpfVerificado);
+ 
+    
+    if(soma )
+    resposta.innerHtml = ``
 
     // 047 135 780 45
     

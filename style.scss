@@ -1,3 +1,62 @@
+  
+/// Estas variaveis se referem as cores principais do nosso blog
+$purple: #A050BE;
+$light-grey: #b9b9be;
+$dark-grey: #464646;
+$yellow: #e4d8c2;
+$dark-green:#285546;
+$green: #47685d;;
+$img-width: 45%;
+
+@import 'header';
+
 body{
-    background-color: black;
+    background-color: $dark-green;
 }
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+
+
+    &__label {
+        color: $yellow;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 40px;
+        letter-spacing: 3px;
+    }
+    &__input{
+        border-radius: 20px;
+        border:1px solid $light-grey;
+        width:100%;
+        height: 50px;
+
+        &::placeholder{
+            font-size: 30px;
+            text-align: center;
+            color: rgb(199, 199, 199);
+        }
+    }
+    &__bt{
+        border-radius: 20px;
+        margin: 10px;
+        height: 50px;
+        border: none;
+        color: rgb(199, 199, 199);
+        background: $green;
+        transition: 3s;
+        font-family: Arial, Helvetica, sans-serif;
+        &:hover{
+            background-color: $green;
+            height: 60px;
+        }
+    }
+
+    }
+  
